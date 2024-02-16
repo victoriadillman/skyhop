@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body, html {
+  background-color: rgb(179, 179, 179);
+  font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+  min-height: 80vh;
+  margin: 4rem;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+h1 {
+  color: rgb(29, 61, 112);
+}
+
+.line {
+  width: 100%;
+  size: 1;
+  color: gray;
+}
+
+.close {
+  background-color: rgb(29, 61, 112);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.file {
+  grid-row: 3;
+  grid-column: 1 / 4;
+}
+
+.heading {
+  grid-row: 2;
+  grid-column: 1 / 4;
+  text-align: center;
+}
+.line {
+  width: 33%;
+}
+
+.form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  margin: 1rem;
+}
+
+.import {
+  grid-column: 1 / 5;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.second {
+  grid-column: 3 / 5;
+  grid-row: 1;
+}
+
+/* Form Specific Styling: */
+
+.import-name {
+  width: 100%;
+  padding: 4px;
+  outline: none;
+  border: gray solid 1px;
+  border-radius: 3px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+
+.blue-bold {
+  color: rgb(29, 61, 112);
+  font-weight: bold;
+}
+
+.green {
+  color: rgb(89, 174, 124)
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+}
+
+.testing-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+  margin-top: 10px;
+}
+
+.center1 {
+  grid-column: 1;
+}
+
+.center2 {
+  grid-column: 2 / 4;
+  padding: 1px 5px;
+}
+
+.center3 {
+  grid-column: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tolerance-label {
+  display: flex;
+}
+
+/* File Upload Styling */
+
+.dropzone-container {
+  outline: solid gray 2px;
+  outline-offset: 10px;
+  border: dashed gray 2px;
+  border-radius: .5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+.internal-file {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  color: rgb(29, 61, 112);
+}
+.internal-file:hover {
+  cursor: pointer;
+}
+
+.orange {
+  color: orange;
+}
+
+.one-row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  color: gray;
+  font-size: small;
+}
+.one-line {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+progress {
+  border-radius: 7px; 
+  width: 20rem;
+  height: 3px;
+  margin-top: 2px;
+  box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+}
+progress::-webkit-progress-bar {
+  background-color: rgb(149, 147, 147);
+  border-radius: 1px;
+}
+progress::-webkit-progress-value {
+  background-color: rgb(83, 82, 82);
+  border-radius: 1px;
+}
+
+/* Button styling */
+
+.import-button {
+  background-color: rgb(29, 61, 112);
+  color: white;
+  border-radius: 3px;
+  border: none;
+  margin: 5px;
+  width: 145px;
+  height: 30px
+}
+.import-button:hover {
+  cursor: pointer;
+}
+
+.cancel-button {
+  color: rgb(235, 189, 115);
+  background-color: white;
+  outline: solid 2px rgb(235, 189, 115);
+  border-radius: 3px;
+  border: none;
+  width: 145px;
+  height: 28px
+}
+
+.cancel-button:hover{
+  cursor: pointer;
+}
