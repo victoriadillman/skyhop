@@ -13,4 +13,4 @@ To start the project, follow these steps:
 5. Start the project
    ```bash
    npm start
-6. Navigate to [localhost](http://localhost:3000/)http://localhost:3000/ on your browser
+6. Navigate to (http://localhost:3000/) on your browser
