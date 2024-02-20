@@ -145,6 +145,11 @@ h1 {
   display: flex;
 }
 
+.tolerance-window {
+  width: 100%;
+}
+
+
 /* File Upload Styling */
 
 .dropzone-container {

@@ -95,35 +95,37 @@ const FileUpload = ({setIsOpen}) => {
         <p className="green">{dataCheck ? 'No Elapsed Dates!' : 'Elapsed Dates!'}</p>
 
         <hr />
-        <label className="blue-bold">Tolerance Window:</label>
-        <Controller 
-          name="tolerance"
-          control={control}
-          render={({field: {onChange, value = true}}) => (
-            <FormControlLabel
-              control={<Switch 
-                checked={value} 
-                onChange={onChange}
-                sx={{
-                  '& .MuiSwitch-thumb': {
-                    backgroundColor: 'white',
-                  },
-                  '& .MuiSwitch-track': {
-                    backgroundColor: theme.label.blue,
-                  },
-                }}
-              />}
-              label={
-                <div className="tolerance-label">
-                  {`Toggle ${value ? 'ON' : 'OFF'} | `}
-                  <CiClock2 size={25} style={{ marginRight: '8px' }} />
-                  {`Select Tolerance Level`}
-                </div>
-              }
-              sx={{color: theme.label.blue}}
-            />
-          )}
-        />
+        <div className="tolerance-window">
+          <label className="blue-bold">Tolerance Window:</label>
+          <Controller 
+            name="tolerance"
+            control={control}
+            render={({field: {onChange, value = true}}) => (
+              <FormControlLabel
+                control={<Switch 
+                  checked={value} 
+                  onChange={onChange}
+                  sx={{
+                    '& .MuiSwitch-thumb': {
+                      backgroundColor: 'white',
+                    },
+                    '& .MuiSwitch-track': {
+                      backgroundColor: theme.label.blue,
+                    },
+                  }}
+                />}
+                label={
+                  <div className="tolerance-label">
+                    {`Toggle ${value ? 'ON' : 'OFF'} | `}
+                    <CiClock2 size={25} style={{ marginRight: '8px' }} />
+                    {`Select Tolerance Level`}
+                  </div>
+                }
+                sx={{color: theme.label.blue}}
+              />
+            )}
+          />
+        </div>
       </div>
       <div className="second">
         <Controller 
