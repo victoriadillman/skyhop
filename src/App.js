@@ -8,7 +8,7 @@ const App = () => {
     <div className='mainContainer'>
       {isOpen ? 
         <Popup setIsOpen={setIsOpen} /> : 
-        <button className='import-button' onClick={() => setIsOpen(true)}>Click to Upload Document</button>
+        <button className='import-button' onClick={() => setIsOpen(true)}>Upload Document</button>
       }
     </div>
   )

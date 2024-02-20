@@ -24,7 +24,10 @@ const FileUpload = ({setIsOpen}) => {
   const [ clientValue, setClientValue ] = useState(1);
   
   // With a backend, this would be an API call to submit the data
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => {
+    setIsOpen(false);
+    alert('Import Successful')
+  }
 
   // File Upload Progress logic:
   const onDrop = (acceptedFiles) => {

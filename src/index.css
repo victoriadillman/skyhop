@@ -9,6 +9,9 @@ body, html {
 .mainContainer {
   min-height: 80vh;
   margin: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup {
