@@ -43,6 +43,9 @@ h1 {
   grid-row: 1;
   grid-column: 1;
 }
+.close:hover {
+  cursor: pointer;
+}
 
 .file {
   grid-row: 3;

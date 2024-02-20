@@ -13,7 +13,7 @@ import theme from "../fileUploadStyle";
 import { CiClock2 } from "react-icons/ci";
 import { FaFileAlt, FaFileImage } from "react-icons/fa";
 
-const FileUpload = () => {
+const FileUpload = ({setIsOpen}) => {
   // Hypothetically setting up to check on via (nonexistant) backend whether dates elapsed or location is unavailable
   const [dataCheck, setDataCheck] = useState(true);
   const [locationCheck, setLocationCheck] = useState(true);
@@ -227,9 +227,8 @@ const FileUpload = () => {
         {file && <p className="blue-bold">Data in the import file is correct. Please press Continue to import.</p>}
         <div>
           <input className="import-button" type="submit" value="Continue Import"/>
-          <button className="cancel-button" type="button">Cancel</button>
+          <button className="cancel-button" type="button" onClick={() => setIsOpen(false)}>Cancel</button>
         </div>
-        
       </div>
     </form> 
   )
